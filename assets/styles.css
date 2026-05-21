@@ -1301,3 +1301,97 @@
     height: 42px;
   }
 }
+
+
+/* Ajuste solicitado: sem mascote grande no início + bloco da comunidade */
+.home-mascot {
+  display: none !important;
+}
+
+.community-section {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1.2rem auto 1.2rem;
+}
+
+.community-card {
+  min-height: 330px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: clamp(2rem, 5vw, 4.2rem) 1.2rem;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,223,0,.055), transparent 18rem),
+    radial-gradient(circle at 85% 72%, rgba(0,39,118,.12), transparent 20rem),
+    linear-gradient(180deg, rgba(9,12,9,.92), rgba(5,6,5,.82));
+  box-shadow: 0 24px 70px rgba(0,0,0,.38);
+  overflow: hidden;
+}
+
+.community-card h2 {
+  margin: .6rem 0 .8rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+  font-weight: 950;
+}
+
+.community-card h2 span { color: var(--yellow); }
+
+.community-card p {
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: clamp(.95rem, 1.5vw, 1.08rem);
+  line-height: 1.7;
+}
+
+.community-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .9rem;
+  margin-top: 2rem;
+}
+
+.community-discord,
+.community-vip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  min-height: 48px;
+  border-radius: 999px;
+  padding: .85rem 1.25rem;
+  font-weight: 900;
+  transition: .16s ease;
+}
+
+.community-discord {
+  background: linear-gradient(135deg, #ffdf00, #009739);
+  color: #031014;
+  box-shadow: 0 16px 32px rgba(255,223,0,.10), 0 12px 26px rgba(0,151,57,.10);
+}
+
+.community-vip {
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.045);
+  color: var(--text);
+}
+
+.community-discord:hover,
+.community-vip:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.04);
+}
+
+@media (max-width: 640px) {
+  .community-section {
+    width: min(100% - 1rem, 1180px);
+  }
+  .community-actions a {
+    width: 100%;
+  }
+}
