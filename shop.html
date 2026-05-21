@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evemon Brasil - Loja Oficial</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark">BR</span>
+      <span>Evemon Brasil</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Início</a>
+      <a href="/shop" class="active">Loja</a>
+      <a href="/como-jogar">Como Jogar</a>
+      <a href="/downloads">Downloads</a>
+      <a href="/equipe">Equipe</a>
+    </nav>
+    <a class="discord-btn" href="https://discord.gg" target="_blank">Discord</a>
+  </header>
+  <main class="page page-pad">
+    <section class="shop-grid" id="shop">
+      <aside class="glass category-panel">
+        <div class="side-title">
+          <h2>Categorias</h2>
+          <span id="sideTotal">18</span>
+        </div>
+        <div class="filters" id="filters"></div>
+      </aside>
+
+      <div class="glass catalog">
+        <div class="catalog-header">
+          <div>
+            <span class="eyebrow">Produtos Brasil</span>
+            <h2>Escolha por categoria</h2>
+          </div>
+          <span class="result" id="resultCount">18 resultados</span>
+        </div>
+
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Buscar produtos" aria-label="Buscar produtos">
+          <span class="ghost-btn">Catálogo completo</span>
+        </div>
+
+        <div id="products"></div>
+      </div>
+
+      <aside class="glass sidebar" id="cart">
+        <div class="cart-head">
+          <div><h2>Seu carrinho</h2><span id="cartCount">0 itens</span></div>
+          <span class="pill">Seguro</span>
+        </div>
+        <div id="cartItems"></div>
+        <div class="total-row"><span>Subtotal</span><strong id="subtotal">R$0.00</strong></div>
+        <div class="total-row final"><span>Total</span><strong id="total">R$0.00</strong></div>
+        <button id="checkout" class="checkout" disabled>Carrinho vazio</button>
+        <div class="protected">🛡️ Compra protegida e entrega automática</div>
+
+        <div class="info-box">
+          <h3>Por que comprar aqui?</h3>
+          <p><b>Entrega rápida</b><br>Receba após a confirmação do pagamento.</p>
+          <p><b>Pagamento seguro</b><br>Checkout com gateways confiáveis.</p>
+          <p><b>Comunidade ativa</b><br>Eventos, recompensas e suporte no Discord.</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Compras recentes</h3>
+          <div class="recent-row"><span><b>Isaque_291</b><br>Passe de Batalha Premium</span></div>
+          <div class="recent-row"><span><b>IzaFerSalazar</b><br>Passe de Batalha Premium</span></div>
+          <div class="recent-row"><span><b>IzaFerSalazar</b><br>VIP Titã</span></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="glass">
+    <div>
+      <h3>Evemon Brasil <span class="dot">.</span></h3>
+      <p>A melhor experiência brasileira de aventura, economia, torneios e evolução. Servidor otimizado e comunidade pronta para te receber.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <a href="/">Início</a>
+      <a href="/shop">Loja Oficial</a>
+      <a href="/downloads">Downloads</a>
+      <a href="/como-jogar">Como Jogar</a>
+    </div>
+    <div>
+      <h4>Suporte</h4>
+      <a href="https://discord.gg" target="_blank">Central de Ajuda</a>
+      <a href="#">Termos de Uso</a>
+      <a href="/equipe">Trabalhe Conosco</a>
+    </div>
+    <p class="copyright"><span>© 2026 Evemon Brasil. Todos os direitos reservados.</span><span>Não afiliado à Mojang Studios</span><span>Desenvolvido com ❤️</span></p>
+  </footer>
+<script src="/assets/shop.js"></script>
+</body>
+</html>
